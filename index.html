@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<script src="https://use.fontawesome.com/e7793bd48f.js"></script>
+<body>
+
+<style>
+	hr { margin-top: 3px;margin-bottom: 3px;border-top:1px dotted #ccc;}
+	body {color:rgb(102,102,102)}
+</style>
+
+<div class="container" ng-app="" style="margin-top: 50px;">
+	<div class="row">
+		<div class="col-md-12">
+
+			<form style="margin-bottom: 50px;" method="post" target="my_iframe">
+			  	<div class="form-group">
+			    	<label for="firstname">First Name</label>
+			    	<input type="text" ng-model="firstname" placeholder="First Name" class="form-control" id="firstname">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="lastname">Last Name</label>
+			    	<input type="text" ng-model="lastname" placeholder="First Name" class="form-control" id="lastname">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="title">Job Title</label>
+			    	<input type="text" ng-model="title" placeholder="Job Title" class="form-control" id="title">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="ext">Phone Extension</label>
+			    	<input type="text" ng-model="ext" placeholder="ext" class="form-control" id="ext">
+			  	</div>
+
+			</form>
+
+			<i class="fa fa-clone" aria-hidden="true"></i> and <i class="fa fa-paste" aria-hidden="true"></i> content below after filling out form fields above.
+			
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-4">
+			  			<span style="font-size: 18px;margin-top:10px; display:inline-block"><strong>{{firstname}} {{lastname}}</strong> | {{title}}</span><br>
+			  			MC2 Design Group, Inc. | <a href="http://www.mc2design.com">mc2design.com</a><br>
+			  			<hr style="width: 229px" align="left">
+						<a href="tel:5308934623">530.893.4623</a> ext {{ext}}<br>
+						<a href="tel:5308931940">530.893.1940</a> fax <br>
+						<hr style="width: 229px" align="left">
+			  			330 Wall Street, Suite 12<br>
+						Chico CA, 95928<br>
+						<hr style="width: 229px" align="left">
+						<a href="http://www.mc2design.com"><img src="http://mc2design.com/signature/mc2_logo.jpg"></a>
+						<hr style="width: 229px" align="left">
+						<a href="https://www.facebook.com/mc2designgroup"><img src="http://mc2design.com/signature/fb-icon.jpg" width="20"></a>
+						<a href="https://www.linkedin.com/company/mc2-design-group-inc-"><img src="http://mc2design.com/signature/linkedin-icon.jpg" width="20"></a>
+						<a href="https://www.google.com/maps/dir/''/mc2+design/@39.7674496,-122.0189877,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x808327b9fca2540d:0x6a974ba41af730fe!2m2!1d-121.838548!2d39.72974"><img src="http://mc2design.com/signature/map-icon.jpg" width="20"></a><br>
+						<div style="color:#fff;">end{{lastname}}</div>
+						<div style="color:#fff;">--</div>
+
+				</div>
+			</div>
+
+</body>
+</html>
